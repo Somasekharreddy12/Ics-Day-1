@@ -1,0 +1,7 @@
+Day 1
+
+Architecture
+Git,github
+vs code
+
+done
