@@ -1,0 +1,7 @@
+C:\Somasekhar\C sharp\Assignments\Somasekhar Assignments 1\Somasekhar Assignments 1\bin\Debug\Somasekhar Assignments 1.exe.config
+C:\Somasekhar\C sharp\Assignments\Somasekhar Assignments 1\Somasekhar Assignments 1\bin\Debug\Somasekhar Assignments 1.exe
+C:\Somasekhar\C sharp\Assignments\Somasekhar Assignments 1\Somasekhar Assignments 1\bin\Debug\Somasekhar Assignments 1.pdb
+C:\Somasekhar\C sharp\Assignments\Somasekhar Assignments 1\Somasekhar Assignments 1\obj\Debug\Somasekhar Assignments 1.csproj.AssemblyReference.cache
+C:\Somasekhar\C sharp\Assignments\Somasekhar Assignments 1\Somasekhar Assignments 1\obj\Debug\Somasekhar Assignments 1.csproj.CoreCompileInputs.cache
+C:\Somasekhar\C sharp\Assignments\Somasekhar Assignments 1\Somasekhar Assignments 1\obj\Debug\Somasekhar Assignments 1.exe
+C:\Somasekhar\C sharp\Assignments\Somasekhar Assignments 1\Somasekhar Assignments 1\obj\Debug\Somasekhar Assignments 1.pdb
