@@ -1,0 +1,7 @@
+C:\Somasekhar\.Net training\Csharp\Codechallenge1\Coding challenge\Coding challenge\bin\Debug\Coding challenge.exe.config
+C:\Somasekhar\.Net training\Csharp\Codechallenge1\Coding challenge\Coding challenge\bin\Debug\Coding challenge.exe
+C:\Somasekhar\.Net training\Csharp\Codechallenge1\Coding challenge\Coding challenge\bin\Debug\Coding challenge.pdb
+C:\Somasekhar\.Net training\Csharp\Codechallenge1\Coding challenge\Coding challenge\obj\Debug\Coding challenge.csproj.AssemblyReference.cache
+C:\Somasekhar\.Net training\Csharp\Codechallenge1\Coding challenge\Coding challenge\obj\Debug\Coding challenge.csproj.CoreCompileInputs.cache
+C:\Somasekhar\.Net training\Csharp\Codechallenge1\Coding challenge\Coding challenge\obj\Debug\Coding challenge.exe
+C:\Somasekhar\.Net training\Csharp\Codechallenge1\Coding challenge\Coding challenge\obj\Debug\Coding challenge.pdb
