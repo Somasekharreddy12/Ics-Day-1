@@ -1,0 +1,7 @@
+C:\Somasekhar\.Net training\Csharp\Assignments\Assignment 3\Assignmet 3\Assignmet 3\obj\Debug\Assignmet 3.csproj.AssemblyReference.cache
+C:\Somasekhar\.Net training\Csharp\Assignments\Assignment 3\Assignmet 3\Assignmet 3\obj\Debug\Assignmet 3.csproj.CoreCompileInputs.cache
+C:\Somasekhar\.Net training\Csharp\Assignments\Assignment 3\Assignmet 3\Assignmet 3\bin\Debug\Assignmet 3.exe.config
+C:\Somasekhar\.Net training\Csharp\Assignments\Assignment 3\Assignmet 3\Assignmet 3\bin\Debug\Assignmet 3.exe
+C:\Somasekhar\.Net training\Csharp\Assignments\Assignment 3\Assignmet 3\Assignmet 3\bin\Debug\Assignmet 3.pdb
+C:\Somasekhar\.Net training\Csharp\Assignments\Assignment 3\Assignmet 3\Assignmet 3\obj\Debug\Assignmet 3.exe
+C:\Somasekhar\.Net training\Csharp\Assignments\Assignment 3\Assignmet 3\Assignmet 3\obj\Debug\Assignmet 3.pdb
