@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignmet_3
 {
-    class Length
+    class Reverse
     {
         static void Main()
         {
