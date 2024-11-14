@@ -51,7 +51,7 @@ namespace ConsoleApp1
                 int productprice = int.Parse(Console.ReadLine());
 
 
-                products.Add(new products(productsId, productsName,productsprice));
+                products.Add(new products(productsId, productsName,productprice));
                 Console.WriteLine();  
             }
 
