@@ -1,0 +1,6 @@
+C:\Somasekhar\.Net training\Csharp\Assignments\Assignments 6\Assignment 6 program 4\Assignment 6 program 4\bin\Debug\Assignment 6 program 4.exe
+C:\Somasekhar\.Net training\Csharp\Assignments\Assignments 6\Assignment 6 program 4\Assignment 6 program 4\bin\Debug\Assignment 6 program 4.pdb
+C:\Somasekhar\.Net training\Csharp\Assignments\Assignments 6\Assignment 6 program 4\Assignment 6 program 4\obj\Debug\Assignment 6 program 4.csproj.AssemblyReference.cache
+C:\Somasekhar\.Net training\Csharp\Assignments\Assignments 6\Assignment 6 program 4\Assignment 6 program 4\obj\Debug\Assignment 6 program 4.csproj.CoreCompileInputs.cache
+C:\Somasekhar\.Net training\Csharp\Assignments\Assignments 6\Assignment 6 program 4\Assignment 6 program 4\obj\Debug\Assignment 6 program 4.exe
+C:\Somasekhar\.Net training\Csharp\Assignments\Assignments 6\Assignment 6 program 4\Assignment 6 program 4\obj\Debug\Assignment 6 program 4.pdb
