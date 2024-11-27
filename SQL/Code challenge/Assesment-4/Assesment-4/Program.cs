@@ -4,41 +4,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//namespace Coding_challenge
 
 
+public class Employee
 
-    public class Employee
+{
+
+    public int EmployeeID;
+
+    public string FirstName;
+
+    public string LastName;
+
+    public string Title;
+
+    public DateTime DOB;
+
+    public DateTime DOJ;
+
+    public string City;
+
+}
+
+public class Program
+
+{
+
+    public static void Main()
 
     {
 
-        public int EmployeeID;
+        // Creating the list of employees
 
-        public string FirstName;
-
-        public string LastName;
-
-        public string Title;
-
-        public DateTime DOB;
-
-        public DateTime DOJ;
-
-        public string City;
-
-    }
-
-    public class Program
-
-    {
-
-        public static void Main()
-
-        {
-
-            // Creating the list of employees
-
-            List<Employee> employeeList = new List<Employee>
+        List<Employee> employeeList = new List<Employee>
 
 {
 
@@ -226,66 +224,66 @@ new Employee {
 
 
 
-            var AllEmployees = employeeList;
+        var AllEmployees = employeeList;
 
-            Console.WriteLine("All Employee Details:");
+        Console.WriteLine("All Employee Details:");
 
-            foreach (var emp in AllEmployees)
+        foreach (var emp in AllEmployees)
 
-            {
+        {
 
-                Console.WriteLine($"{emp.EmployeeID} {emp.FirstName} {emp.LastName} {emp.Title} {emp.DOB.ToShortDateString()} {emp.DOJ.ToShortDateString()} {emp.City}");
+            Console.WriteLine($"{emp.EmployeeID} {emp.FirstName} {emp.LastName} {emp.Title} {emp.DOB.ToShortDateString()} {emp.DOJ.ToShortDateString()} {emp.City}");
 
-                Console.WriteLine();
-
-            }
-
-
-
-            var nonMumbaiEmployees = employeeList.Where(e => e.City != "Mumbai");
-
-            Console.WriteLine("\nEmployees Not in Mumbai:");
-
-            foreach (var employee in nonMumbaiEmployees)
-
-            {
-
-                Console.WriteLine($"{employee.EmployeeID} {employee.FirstName} {employee.LastName} {employee.City}");
-
-            }
-
-
-
-            var AsstManagers = employeeList.Where(e => e.Title == "AsstManager");
-
-            Console.WriteLine("\nAsstManagers:");
-
-            foreach (var employee in AsstManagers)
-
-            {
-
-                Console.WriteLine($"{employee.EmployeeID} {employee.FirstName} {employee.LastName} {employee.Title}");
-
-            }
-
-
-
-            var employeesWithS = employeeList.Where(e => e.LastName.StartsWith("S"));
-
-            Console.WriteLine("\nEmployees Whose Last Name Starts with 'S':");
-
-            foreach (var employee in employeesWithS)
-
-            {
-
-                Console.WriteLine($"{employee.EmployeeID} {employee.FirstName} {employee.LastName}");
-
-            }
-
-            Console.ReadLine();
+            Console.WriteLine();
 
         }
 
+
+
+        var nonMumbaiEmployees = employeeList.Where(e => e.City != "Mumbai");
+
+        Console.WriteLine("\nEmployees Not in Mumbai:");
+
+        foreach (var employee in nonMumbaiEmployees)
+
+        {
+
+            Console.WriteLine($"{employee.EmployeeID} {employee.FirstName} {employee.LastName} {employee.City}");
+
+        }
+
+
+
+        var AsstManagers = employeeList.Where(e => e.Title == "AsstManager");
+
+        Console.WriteLine("\nAsstManagers:");
+
+        foreach (var employee in AsstManagers)
+
+        {
+
+            Console.WriteLine($"{employee.EmployeeID} {employee.FirstName} {employee.LastName} {employee.Title}");
+
+        }
+
+
+
+        var employeesWithS = employeeList.Where(e => e.LastName.StartsWith("S"));
+
+        Console.WriteLine("\nEmployees Whose Last Name Starts with 'S':");
+
+        foreach (var employee in employeesWithS)
+
+        {
+
+            Console.WriteLine($"{employee.EmployeeID} {employee.FirstName} {employee.LastName}");
+
+        }
+
+        Console.ReadLine();
+
     }
+
+}
 
 

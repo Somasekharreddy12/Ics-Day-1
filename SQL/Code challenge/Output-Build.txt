@@ -1,0 +1,4 @@
+﻿Build started...
+1>------ Build started: Project: Assesment-4, Configuration: Debug Any CPU ------
+1>  Assesment-4 -> C:\Somasekhar\.Net training\SQL\Code challenge\Assesment-4\Assesment-4\bin\Debug\Assesment-4.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
