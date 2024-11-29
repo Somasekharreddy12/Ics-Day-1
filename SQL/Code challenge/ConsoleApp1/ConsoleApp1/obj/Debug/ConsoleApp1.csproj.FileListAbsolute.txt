@@ -1,0 +1,7 @@
+C:\Somasekhar\.Net training\SQL\Code challenge\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Somasekhar\.Net training\SQL\Code challenge\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Somasekhar\.Net training\SQL\Code challenge\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Somasekhar\.Net training\SQL\Code challenge\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Somasekhar\.Net training\SQL\Code challenge\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Somasekhar\.Net training\SQL\Code challenge\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Somasekhar\.Net training\SQL\Code challenge\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
