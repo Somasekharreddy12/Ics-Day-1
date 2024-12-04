@@ -17,7 +17,7 @@ AS AgeInDays;
 
 ---------------------------------------------------------------------------------------------------------------------
 
-SELECT *FROM EMP
+SELECT * FROM EMP
 WHERE
 HireDate < DATEADD(YEAR, -5, GETDATE())AND MONTH(HireDate) = MONTH(GETDATE());
 
@@ -32,7 +32,8 @@ CREATE TABLE Employee
     Sal FLOAT,
     DOJ DATE
 );
- 
+
+Begin transaction
 
 INSERT INTO Employee (EmpNo, EName, Sal, DOJ)
 VALUES
@@ -40,18 +41,19 @@ VALUES
     (2, 'martin', 6000, '2001-05-05'),
     (3, 'blake', 3000, '1998-08-03');
 
-B--
+
       UPDATE Employee
 SET Sal = Sal * 1.15
 WHERE EmpNo = 2;
 SELECT * FROM Employee
-C--
+
 DELETE FROM Employee
-WHERE EmpNo = 1
+WHERE EmpNo = 1;
 
 rollback
-
 commit
+
+
 SELECT * FROM Employee
 
  
