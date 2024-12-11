@@ -61,10 +61,10 @@ VALUES ('CC004', 'Cloud computing', '2024-05-20', '2024-02-15', 15000);
  SELECT * FROM T_CourseInfo;
  ----------------------------------------------------------------------------------------------------
  CREATE PROCEDURE sp_InsertProductDetails
-    @ProductName NVARCHAR(100),
-    @Price DECIMAL(10, 2),
+    @ProductName VARCHAR(20),
+    @Price int,
     @GeneratedProductId INT ,
-    @DiscountedPrice DECIMAL(10, 2) 
+    @DiscountedPrice int 
 AS
 BEGIN
     DECLARE @MaxProductId INT;
