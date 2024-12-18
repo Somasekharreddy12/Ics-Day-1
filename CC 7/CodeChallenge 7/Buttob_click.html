@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Click Event</title>
+    <script type="text/javascript">
+        
+        function createButton() {
+           
+            var button = document.createElement("button");
+            button.innerText = "Click Me!";
+ 
+            
+            button.addEventListener("click", function() {
+                console.log("Button was clicked!");
+                alert("Button was clicked!");
+            });
+ 
+                       document.body.appendChild(button);
+        }
+ 
+       
+        window.onload = createButton;
+    </script>
+</head>
+<body>
+    <h2>Button Click Event Example</h2>
+    <p>Welcom To Infinite .</p>
+</body>
+</html>

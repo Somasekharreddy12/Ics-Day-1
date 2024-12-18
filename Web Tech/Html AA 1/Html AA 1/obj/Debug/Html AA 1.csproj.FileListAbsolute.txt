@@ -1,0 +1,7 @@
+C:\Somasekhar\.Net training\Web Tech\Html AA 1\Html AA 1\bin\Debug\Html AA 1.exe.config
+C:\Somasekhar\.Net training\Web Tech\Html AA 1\Html AA 1\bin\Debug\Html AA 1.exe
+C:\Somasekhar\.Net training\Web Tech\Html AA 1\Html AA 1\bin\Debug\Html AA 1.pdb
+C:\Somasekhar\.Net training\Web Tech\Html AA 1\Html AA 1\obj\Debug\Html AA 1.csproj.AssemblyReference.cache
+C:\Somasekhar\.Net training\Web Tech\Html AA 1\Html AA 1\obj\Debug\Html AA 1.csproj.CoreCompileInputs.cache
+C:\Somasekhar\.Net training\Web Tech\Html AA 1\Html AA 1\obj\Debug\Html AA 1.exe
+C:\Somasekhar\.Net training\Web Tech\Html AA 1\Html AA 1\obj\Debug\Html AA 1.pdb

@@ -17,7 +17,7 @@ namespace Assessment6
         {
             try
             {
-                con = new SqlConnection("Data Source=IICS-LT-D244D6CY;Initial Catalog=SQL _Code_challenge;Integrated Security=true;");
+                con = new SqlConnection("Data Source=ICS-LT-D244D6CY;Initial Catalog=SQL Code challenge;Integrated Security=true;");
                 con.Open();
                 return con;
             }
@@ -39,39 +39,40 @@ namespace Assessment6
                     return;
                 }
 
-                cmd = new SqlCommand("Update_id", con);
+                cmd = new SqlCommand("sp_Insert_ProductDetails", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 Console.Write("Enter the product name: ");
-                string prodName = Console.ReadLine();
-                Console.Write("\nEnter the product price: ");
-                int prdPrice = Convert.ToInt32(Console.ReadLine());
+                string productName = Console.ReadLine();
+                Console.Write("Enter the product price: ");
+                int productPrice = Convert.ToInt32(Console.ReadLine());
 
-                SqlParameter p1 = new SqlParameter();
-                p1.ParameterName = "@Prod_Name";
-                p1.Value = prodName;
-                p1.DbType = DbType.String;
-                p1.Direction = ParameterDirection.Input;
-                cmd.Parameters.Add(p1);
+                cmd.Parameters.Add(new SqlParameter("@ProductName", SqlDbType.VarChar, 20) { Value = productName });
+                cmd.Parameters.Add(new SqlParameter("@Price", SqlDbType.Int) { Value = productPrice });
 
-                SqlParameter p2 = new SqlParameter();
-                p2.ParameterName = "@Prod_price";
-                p2.Value = prdPrice;
-                p2.DbType = DbType.Int32;
-                p2.Direction = ParameterDirection.Input;
-                cmd.Parameters.Add(p2);
-
-                SqlDataReader dr = cmd.ExecuteReader();
-
-
-                Console.WriteLine("Discounted price is " + prdPrice);
-
-                while (dr.Read())
+                
+                SqlParameter generatedProductId = new SqlParameter("@GeneratedProductId", SqlDbType.Int)
                 {
-                    Console.WriteLine(dr[0] + "\t" + dr[1] + "\t" + dr[2] + "\t" + dr[3]);
-                }
+                    Direction = ParameterDirection.Output
+                };
+                cmd.Parameters.Add(generatedProductId);
 
-                dr.Close();
+                SqlParameter discountedPrice = new SqlParameter("@DiscountedPrice", SqlDbType.Int)
+                {
+                    Direction = ParameterDirection.Output
+                };
+                cmd.Parameters.Add(discountedPrice);
+
+                
+                cmd.ExecuteNonQuery();
+
+                
+                int productId = (int)generatedProductId.Value;
+                int discount = (int)discountedPrice.Value;
+
+                Console.WriteLine($"Product inserted successfully.");
+                Console.WriteLine($"Generated Product ID: {productId}");
+                Console.WriteLine($"Discounted Price: {discount}");
             }
             catch (SqlException ex)
             {
@@ -98,7 +99,7 @@ namespace Assessment6
         static void Main(string[] args)
         {
             GetProductDetails();
-            Console.Read();
+            Console.ReadLine();
         }
     }
 }

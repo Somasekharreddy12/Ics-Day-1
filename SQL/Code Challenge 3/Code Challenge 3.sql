@@ -60,23 +60,42 @@ VALUES ('CC004', 'Cloud computing', '2024-05-20', '2024-02-15', 15000);
 
  SELECT * FROM T_CourseInfo;
  ----------------------------------------------------------------------------------------------------
- CREATE PROCEDURE sp_InsertProductDetails
+ drop table ProductDetails
+ 
+ 
+ create table ProductDetails(
+ProductId int,
+ProductName varchar(20),
+Price float(10),
+DiscountedPrice float(10))
+
+ CREATE or alter PROCEDURE sp_Insert_ProductDetails 
     @ProductName VARCHAR(20),
     @Price int,
-    @GeneratedProductId INT ,
-    @DiscountedPrice int 
+    @GeneratedProductId INT OUTPUT ,
+    @DiscountedPrice int OUTPUT
 AS
 BEGIN
-    DECLARE @MaxProductId INT;
-    SELECT @MaxProductId = ISNULL(MAX(ProductId), 0) + 1 FROM ProductsDetails;
 
+    DECLARE @MaxProductId INT;
+    SELECT @MaxProductId = ISNULL(MAX(ProductId), 0) + 1
+	FROM ProductDetails;
+	--Set @ProductName = cookies
     SET @DiscountedPrice = @Price - (@Price * 0.10);
 
-    INSERT INTO ProductsDetails (ProductId, ProductName, Price, DiscountedPrice)
+    INSERT INTO ProductDetails (ProductId, ProductName, Price, DiscountedPrice)
     VALUES (@MaxProductId, @ProductName, @Price, @DiscountedPrice);
 
     SET @GeneratedProductId = @MaxProductId;
 END;
+
+select * from ProductDetails
+
+
+
+declare @pid INT , @dprice INT
+execute sp_Insert_ProductDetails 'cookies', 2000, @pid output ,@dprice output
+
 
 
 
