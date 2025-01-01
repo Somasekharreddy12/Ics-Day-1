@@ -133,7 +133,7 @@ BEGIN
         BEGIN TRANSACTION;
  
         -- Check if the train exists
-        IF NOT EXISTS (SELECT 1 FROM Trains WHERE TrainID = @TrainID)
+        IF NOT EXISTS (SELECT * FROM Trains WHERE TrainID = @TrainID)
         BEGIN
             SET @Status = 'Train not available.';
             ROLLBACK TRANSACTION;
@@ -211,3 +211,4 @@ END
 select * from Trains
 
 select * from Bookings
+
