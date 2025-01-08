@@ -1,12 +1,17 @@
-﻿using System;
+﻿using CodeChallenge8_2.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebApplication1.Repository
+namespace CodeChallenge8_2.Repository
 {
-    interface IMovieRepository
+    public interface IContactRepository
     {
+        Task<List<Movie>> GetAllAsync();
+        Task CreateAsync(MovieRepository contact);
+        Task EditAsync( Movie ID);
+
     }
 }

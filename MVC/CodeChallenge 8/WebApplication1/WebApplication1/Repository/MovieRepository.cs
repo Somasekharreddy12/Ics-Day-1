@@ -7,7 +7,8 @@ using System.Web;
 using CodeChallenge8_2.Models;
 using CodeChallenge8_2.Repository;
 
-namespace MVC_ASSIGNMENT_1.Repository
+
+namespace CodeChallenge8_2.Repository
 {
     public class MovieRepository : IMovieRepository
     {
